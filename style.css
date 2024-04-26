@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+
+*{
+
+    margin: 0px;
+    padding: 0px;
+         }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(110deg, #FFD700, #0573e2, white);
+   
+}
+
+
+.container{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.image{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.image > img{
+    width: 100px;
+    height: 100px;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid white;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);   
+    box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.468);
+   
+}
+ 
+
+.box{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+
+input {
+    outline: none;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+ text-align: center;  
+}
+
+input[type="email"]::placeholder{
+    background-color: transparent;
+}
+
+
+input::placeholder{
+     color: black;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+label{
+    margin: 10px;
+    font-weight: bolder;
+}
+
+
+.box2{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.box2 > h4{
+    padding-bottom: 20px;
+}
+
+
+#bu{
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    
+}
+
+#bu:hover{
+    width: 100%;
+    background-color: transparent;
+    color: black;
+    height: 20px;
+    
+}
+
+.termo{
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+    .home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid white;
+        padding: 35px;
+        border-radius: 10px;
+        background-color: transparent;
+        backdrop-filter: blur(20px);   
+        box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.468);
+       
+    }       
+}

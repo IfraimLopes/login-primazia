@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+
+        <div class="home">
+            <div class="image">
+                
+                <img src="imagens/OIP-removebg-preview (2).png" alt="Primazia">  
+            </div>
+          <h1>Login</h1>
+            <div class="box">
+                <label for="mail"> Email </label>
+                <input type="email" name="email" id="mail"  placeholder="Digite o seu email" maxlength="30" required  autocomplete="off">
+            </div>
+
+
+
+            <div class="box">
+                <label for="password"> Password </label>
+                <input type="password" name="pass" id="password" placeholder="Senha" maxlength="8" required>
+            </div>
+
+
+
+
+           <div class="box2">
+            <h4>Gênero</h4>
+            <div class="box">
+                <label for="Man"> Masculino</label>
+                <input type="radio" name="gender" id="Mascu" required>
+            </div>
+
+
+            <div class="box">
+            
+                <label for="fem">Femenino</label>
+               <input type="radio"  name="gender" id="femi" required>
+            </div>
+
+            
+        </div>
+
+
+            <div class="box">
+                <input type="button" id="bu" value="Enviar"   onclick="enviar()"  required>
+            </div>
+
+            <div class="termo">
+                <label for="termos">Aceitar todos os termos</label>
+                <input type="checkbox" name="termos" id="itermos" required>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+ <script src="script.js"></script>
+
+</html>
